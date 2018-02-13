@@ -14,7 +14,7 @@ p { /* Обычный абзац */
   background-color: white;
   opacity: 0.9; /* Значение прозрачности */
   height: 200pt;
-  z-index: 1;
+  z-index: 1; /* заливка поверх фона */
 }
 
 .head__img_txt {
@@ -22,13 +22,29 @@ p { /* Обычный абзац */
   font-size: 36pt;
   font-family: DroidSerif; /* Имя шрифта */
   src: url(DroidSerif.ttf); /* Путь к файлу со шрифтом */
-  margin: 10%;
-  padding: 10%;
+  margin: 10%; /* Значение отступов */
+  padding: 10%; /* Поля вокруг текста */
 }
 
 .head__img_btn {
   align: center;
   text-align: center;
-  border: 0;
-  background-color: red;
+  font-size: 25pt;
+  font-family: DroidSerif; /* Имя шрифта */
+  src: url(DroidSerif.ttf); /* Путь к файлу со шрифтом */
+  width: 300px; /* Ширина слоя */
+  margin: 2em; /* Значение отступов */
+  padding: 10px; /* Поля вокруг текста */
+  border: 1px solid black; /* Параметры границы */
+  }
+
+.head__img_link {
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+  display: block; /* Ссылка как блочный элемент */
+  color: darkred; /* Цвет обычной ссылки */
+  height: 100%;
+  width: 100%;
+}
+.head__img_link:hover {
+    color: #FF0000; /* Цвет ссылки при наведении на нее курсора мыши */
   }
